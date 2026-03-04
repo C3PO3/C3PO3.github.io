@@ -1,0 +1,154 @@
+@font-face {
+    font-family: 'OswaldBold';
+    src: url('fonts/Oswald-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'SourceSerif';
+    src: url('fonts/SourceSerif4-VariableFont_opsz,wght.ttf');
+}
+
+@font-face {
+    font-family: 'SourceSerif';
+    src: url('fonts/SourceSerif4-Italic-VariableFont_opsz,wght.ttf');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Italic.ttf');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Bold.ttf');
+    font-weight: bold;
+}
+
+.page_title {
+    font-weight: normal;
+    font-size: 40px;
+    font-family: OswaldBold;
+    text-align: center;
+    color: #264653;
+    letter-spacing: 5px;
+}
+
+body {
+    font-family: SourceSerif;
+}
+
+h2 {
+    font-family: OswaldBold;
+}
+
+.entry-box {
+    font-family: SourceSerif;
+    letter-spacing: 5px;
+}
+
+.book {
+    display: inline-block;
+    width: 200px;
+    height: auto;
+    margin: 0 40px 20px 40px;
+    align-items: center;
+    text-align: center;
+    font-family: SourceSerif;
+    color: #000000;
+}
+
+.book h2 {
+    font-family: SourceSerif;
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 24px;
+}
+
+.book input {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 0;
+}
+
+.book input:hover {
+    width: 190px;
+    height: 290px;
+    padding: 5px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.books-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: auto;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.price {
+    font-family: SourceSerif;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0;
+    float: left;
+}
+
+.author {
+    font-family: SourceSerif;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0;
+    float: right;
+    font-style: italic;
+}
+
+@media screen and (max-width: 800px) {
+    .books-container {
+        width: 100%;
+    }
+    .book {
+        width: 150px;
+        margin: 0 10px 10px 10px;
+    }
+    .book input{
+        width: 100px;
+        height: 150px;
+    }
+    .book h2 {
+        font-size: 14px;
+        margin: 16px, 5px, 0;
+    }
+    .book p {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    .book input:hover {
+        width: 90px;
+        height: 140px;
+        padding: 5px;
+        border-color: #ffffff;
+        object-fit: cover;
+        cursor: pointer;
+    }
+
+    .author {
+        font-size: 12px;
+    }
+
+    .price {
+        font-size: 12px;
+    }
+ }
